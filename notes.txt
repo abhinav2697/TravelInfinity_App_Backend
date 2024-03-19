@@ -1,0 +1,31 @@
+it gives package.json file
+to create the package.json
+npm init -y
+npm i nodemon
+npm i express
+npm i express uuid mongoose jsonwebtoken dotenv crypto-js
+npm run dev
+
+http://localhost:3500/api/hotels-->get hotels data
+
+Mongodob cloud:
+username:abhinavkulkarni64
+password:Abhinav1234
+
+Your current IP address (106.203.204.118) has been added to enable local connectivity.
+0.0.0.0/0
+
+mongodb+srv://abhinavkulkarni64:<password>@traveldbcluster.z2zvswm.mongodb.net/?retryWrites=true&w=majority&appName=TravelDBCluster
+
+
+complex state
+
+https://www.npmjs.com/package/crypto-js
+
+to generate a password secret hex key value using node 
+node
+require('crypto').randomBytes(64).toString('hex')
+'6c1f27f7ba80641dc65fb3df2fad11f71a6b0dc6369b253dc90ef212f00925fe12689e3463cdf46e42d8c7646358a197c28c03de3e84ed9285fb93e19134c566'
+
+username:Abhinav
+password:12345678
