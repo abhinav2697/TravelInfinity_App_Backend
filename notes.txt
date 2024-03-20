@@ -29,3 +29,5 @@ require('crypto').randomBytes(64).toString('hex')
 
 username:Abhinav
 password:12345678
+
+npm i cors
