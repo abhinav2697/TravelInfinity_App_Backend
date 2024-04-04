@@ -2,6 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors= require('cors');
+const cors = require('cors');
+const corsOptions ={
+    origin:'http://localhost:3000', 
+    credentials:true,            
+    optionSuccessStatus:200
+}
+
 
 dotenv.config();
 
@@ -18,7 +25,7 @@ const connectDB = require("./config/dbconfig");
 
 const app = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 connectDB();
 
