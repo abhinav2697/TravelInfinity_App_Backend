@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors= require('cors');
 
-
 dotenv.config();
 
 const hotelDataAddedToDBRouter = require("./routes/dataimport.router");
@@ -29,9 +28,9 @@ app.get("/", (req, res) => {
     res.send("Hello Geeks");
 })
 
- app.listen(PORT, () => {
-    console.log(`Travel listening on port ${PORT}`)
-  })
+// app.listen(PORT, () => {
+//     console.log(`Travel listening on port ${PORT}`)
+//   })
 
 app.use("/api/hoteldata", hotelDataAddedToDBRouter);
 app.use("/api/categorydata", categoryDataAddedToDBRouter);
