@@ -2,11 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors= require('cors');
-const corsOrigin ={
-    origin:'http://localhost:3000', //or whatever port your frontend is using
-    credentials:true,            
-    optionSuccessStatus:200
-}
+
 
 dotenv.config();
 
@@ -23,7 +19,7 @@ const connectDB = require("./config/dbconfig");
 
 const app = express();
 
-app.use(cors(corsOrigin));
+app.use(cors());
 app.use(express.json());
 connectDB();
 
